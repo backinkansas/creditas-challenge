@@ -1,9 +1,9 @@
 export default class RangeHandler {
   constructor() {
-    this.collateralRange = document.getElementById('valor-garantia-range');
-    this.collateralInput = document.getElementById('valor-garantia');
-    this.loanRange = document.getElementById('valor-emprestimo-range');
-    this.loanInput = document.getElementById('valor-emprestimo');
+    this.collateralRange = document.getElementById('collateral-value-range');
+    this.collateralInput = document.getElementById('collateral-value');
+    this.loanRange = document.getElementById('requested-amount-range');
+    this.loanInput = document.getElementById('requested-amount');
   }
 
   createHandlers() {

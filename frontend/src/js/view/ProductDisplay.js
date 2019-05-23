@@ -2,19 +2,19 @@ import { INTEREST_RATE } from '../rules';
 
 export default class ProductDisplay {
   constructor() {
-    this.loanAmountInput = document.getElementById('valor-emprestimo');
-    this.loanAmountRange = document.getElementById('valor-emprestimo-range');
+    this.loanAmountInput = document.getElementById('requested-amount');
+    this.loanAmountRange = document.getElementById('requested-amount-range');
 
-    this.minLoanText = document.getElementById('valor-emprestimo-min');
-    this.maxLoanText = document.getElementById('valor-emprestimo-max');
+    this.minLoanText = document.getElementById('requested-amount-min');
+    this.maxLoanText = document.getElementById('requested-amount-max');
 
-    this.installments = document.getElementById('parcelas');
+    this.installments = document.getElementById('installments');
 
-    this.collateralValueInput = document.getElementById('valor-garantia');
-    this.collateralValueRange = document.getElementById('valor-garantia-range');
+    this.collateralValueInput = document.getElementById('collateral-value');
+    this.collateralValueRange = document.getElementById('collateral-value-range');
 
-    this.minCollateralValue = document.getElementById('valor-garantia-min');
-    this.maxCollateralValue = document.getElementById('valor-garantia-max');
+    this.minCollateralValue = document.getElementById('collateral-value-min');
+    this.maxCollateralValue = document.getElementById('collateral-value-max');
   }
 
   updateProduct(data) {
@@ -24,7 +24,7 @@ export default class ProductDisplay {
   }
 
   displayInterestRate() {
-    const interestRateDOM = document.getElementById('taxa-de-juros');
+    const interestRateDOM = document.getElementById('interest-rate');
     const normalizedInterestRate = parseFloat((INTEREST_RATE * 100).toFixed(2));
     interestRateDOM.innerText = `${normalizedInterestRate} %`;
   }

@@ -3,7 +3,7 @@ import Mediator from './js/Mediator';
 
 export default class CreditasChallenge {
   static initialize() {
-    this.registerEvents()
+    this.registerEvents();
   }
 
   static registerEvents() {
@@ -16,5 +16,5 @@ export default class CreditasChallenge {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  CreditasChallenge.initialize()
+  CreditasChallenge.initialize();
 })

@@ -14,7 +14,7 @@ export default class Mediator {
     this.errorHandler = new ErrorHandler();
     this.productDisplay = new ProductDisplay();
     this.resultDispatcher = document.getElementById('form');
-    this.selectElement = document.getElementById('garantia');
+    this.selectElement = document.getElementById('collateral');
     this.productChoice = new ProductChoice(this.selectElement);
     this.currentProduct;
   }
@@ -43,9 +43,9 @@ export default class Mediator {
     const inputHandler = new InputDisplay();
 
     this.resultDispatcher.addEventListener('change', () => {
-      const selectedInstallments = inputHandler.getLoanTerm('parcelas');
-      const requestedAmount = inputHandler.getLoanTerm('valor-emprestimo');
-      const collateralValue = inputHandler.getLoanTerm('valor-garantia');
+      const selectedInstallments = inputHandler.getLoanTerm('installments');
+      const requestedAmount = inputHandler.getLoanTerm('requested-amount');
+      const collateralValue = inputHandler.getLoanTerm('collateral-value');
 
       try {
         this.LTV.validate(collateralValue, requestedAmount);

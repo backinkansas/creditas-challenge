@@ -21,52 +21,58 @@
         <section class="section__container width-medium flex-spaced">
           <form class="form flex-spaced flex-column" name="form" id="form">
             <div class="form__fields">
+
               <div class="field-group">
                 <div class="field flex-column">
-                  <label class="field__label" for="parcelas">Número de parcelas</label>
-                  <select class="field__select" name="parcelas no-appearance" id="parcelas" required>
+                  <label class="field__label" for="installments">Número de parcelas</label>
+                  <select class="field__select" name="installments no-appearance" id="installments" required>
                     <option value="24" id="installments_first-option">24</option>
                     <option value="36" id="installments_second-option">36</option>
                     <option value="48" id="installments_third-option">48</option>
                   </select>
                 </div>
+
                 <div class="field flex-column">
-                  <label class="field__label" for="garantia">Garantia</label>
-                  <select class="field__select" name="garantia no-appearance" id="garantia" required>
+                  <label class="field__label" for="collateral">Garantia</label>
+                  <select class="field__select" name="collateral no-appearance" id="collateral" required>
                     <option value="veiculo">Veículo</option>
                     <option value="imovel">Imóvel</option>
                   </select>
                 </div>
               </div>
-              <div class="valor-garantia">
+
+              <div class="collateral-value">
                 <div class="field-group">
                   <div class="field flex-column">
-                    <label class="field__label" for="valor-garantia">Valor da Garantia</label>
-                    <input class="field__text-input" type="text" name="valor-garantia" id="valor-garantia" required/>
+                    <label class="field__label" for="collateral-value">Valor da Garantia</label>
+                    <input class="field__text-input" type="text" name="collateral-value" id="collateral-value" required/>
                   </div>
+
                   <div class="field flex-column">
                     <div class="range">
-                      <input class="field__range-input" type="range" name="valor-garantia-range" id="valor-garantia-range" min="4" max="120" value="0">
+                      <input class="field__range-input" type="range" name="collateral-value-range" id="collateral-value-range" min="4" max="120" value="0">
                       <div class="range__values">
-                        <span class="range__subtitle" id="valor-garantia-min">4.000</span>
-                        <span class="range__subtitle" id="valor-garantia-max">120.000</span>
+                        <span class="range__subtitle" id="collateral-value-min">4.000</span>
+                        <span class="range__subtitle" id="collateral-value-max">120.000</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="emprestimo">
                 <div class="field-group">
                   <div class="field flex-column">
-                    <label class="field__label" for="valor-emprestimo">Valor do Empréstimo</label>
-                    <input class="field__text-input" type="text" required name="valor-emprestimo" id="valor-emprestimo">
+                    <label class="field__label" for="requested-amount">Valor do Empréstimo</label>
+                    <input class="field__text-input" type="text" required name="requested-amount" id="requested-amount">
                   </div>
+
                   <div class="field flex-column">
                     <div class="range">
-                      <input class="range__input" type="range" name="valor-emprestimo-range" id="valor-emprestimo-range" min="3" max="100" value="0">
+                      <input class="range__input" type="range" name="requested-amount-range" id="requested-amount-range" min="3" max="100" value="0">
                       <div class="range__values">
-                        <span class="range__subtitle" id="valor-emprestimo-min">3.000</span>
-                        <span class="range__subtitle" id="valor-emprestimo-max">100.000</span>
+                        <span class="range__subtitle" id="requested-amount-min">3.000</span>
+                        <span class="range__subtitle" id="requested-amount-max">100.000</span>
                       </div>
                     </div>
                   </div>
@@ -89,7 +95,7 @@
             </div>
             <div class="tax__container">
               <h4 class="form-result__title">Taxa de juros (mês)</h4>
-              <p class="form-result__value" id="taxa-de-juros"></p>
+              <p class="form-result__value" id="interest-rate"></p>
             </div>
             <button class="button">
               Solicitar
