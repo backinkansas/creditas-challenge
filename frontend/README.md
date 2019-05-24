@@ -27,3 +27,7 @@ Criei testes unitários e/ou de integração para todas as classes das camadas d
 Para a camada de view, optei por implementar testes de aceitação (end-to-end). Por serem classes que realizam tarefas diretamente no DOM, os testes unitários se tornaram tão complexos e extensos que não mais valiam a pena, pois eram quase uma nova implementação. Utilizando o framework de teste **CodeceptJS** ficou muito simples escrever testes para a interface gráfica. Os cenários foram escritos para todas as classes e responsabilidades da camada de view, garantindo uma cobertura e assertividade maior para os objetivos delas.
 
 OBS.: O code coverage do projeto está sendo calculado apenas pelo Jest. Contando com os testes e2e, a cobertura é, na verdade, maior do que 40%.
+
+Para rodar testes unitários/integração com Jest: `npm test`
+Para rodar testes de aceitação/end-to-end com CodeceptJS: `npm run test:e2e`
+Versão mínima do node: 8.14.x
