@@ -1,0 +1,25 @@
+.center-aligned {
+  align-items: center;
+}
+
+.flex-spaced {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.width-medium {
+  max-width: 600px;
+}
+
+.no-appearance {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border:none;
+}

@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--mountain-meadow);
+  padding: 20px 0;
+}
+
+.logo {
+  height: 2em;
+}
+
+.help {
+  color: var(--concrete);
+  text-decoration: none;
+}

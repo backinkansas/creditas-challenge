@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ubuntu';
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  background-color: var(--concrete);
+}
+
+.main__title {
+  color: var(--dove-gray);
+  line-height: 34px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.section__container {
+  margin: 0 auto 25px auto;
+}
+
+.bad-request {
+  color: var(--red-alert);
+  margin: var(--margin-medium);
+  text-align: center;
+  display: none;
+}
+
+.bad-request--visible {
+  display: block;
+}
+
+@media screen and (max-width: 630px) {
+  .main {
+    height: auto;
+    margin: var(--margin-medium) 0;
+  }
+
+  .section__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,6 @@
+.footer {
+  font-size: var(--font-xx-small);
+  font-weight: var(--weight-light);
+  margin: 0 auto;
+  text-align: center;
+}
