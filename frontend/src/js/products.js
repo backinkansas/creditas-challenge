@@ -35,4 +35,3 @@ export class Home {
     return this;
   }
 }
-
